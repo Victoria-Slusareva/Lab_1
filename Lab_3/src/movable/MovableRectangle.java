@@ -23,37 +23,25 @@ public class MovableRectangle extends MovablePoint implements Movable
     @Override
     public void MoveUp()
     {
-        if (CheckSpeed())
-        {
-            bottomRight.y+=bottomRight.ySpeed;
-            topLeft.y+=topLeft.ySpeed;
-        }
+        bottomRight.y+=bottomRight.ySpeed;
+        topLeft.y+=topLeft.ySpeed;
     }
     @Override
     public void MoveDown()
     {
-        if (CheckSpeed())
-        {
-            bottomRight.y-=bottomRight.ySpeed;
-            topLeft.y-=topLeft.ySpeed;
-        }
+        bottomRight.y-=bottomRight.ySpeed;
+        topLeft.y-=topLeft.ySpeed;
     }
     @Override
     public void MoveLeft()
     {
-        if (CheckSpeed())
-        {
-            bottomRight.x-=bottomRight.xSpeed;
-            topLeft.x-=topLeft.xSpeed;
-        }
+        bottomRight.x-=bottomRight.xSpeed;
+        topLeft.x-=topLeft.xSpeed;
     }
     @Override
     public void MoveRight()
     {
-        if (CheckSpeed())
-        {
-            bottomRight.x+=bottomRight.xSpeed;
-            topLeft.x+=topLeft.xSpeed;
-        }
+        bottomRight.x+=bottomRight.xSpeed;
+        topLeft.x+=topLeft.xSpeed;
     }
 }
