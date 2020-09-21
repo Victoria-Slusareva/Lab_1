@@ -15,7 +15,7 @@ public class Score extends JFrame
     Score()
     {
         setLayout(new BorderLayout());
-        setSize(350,250);
+        setSize(400,300);
         add(team1, BorderLayout.WEST);
         add(team2, BorderLayout.EAST);
         add(result, BorderLayout.NORTH);
