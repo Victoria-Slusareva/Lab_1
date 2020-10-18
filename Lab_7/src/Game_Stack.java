@@ -63,15 +63,15 @@ public class Game_Stack
         Stack temp = new Stack<>();
         Stack<Integer> copied = (Stack<Integer>)stack.clone();
         Integer[] str = new Integer[copied.size()];
-        temp.add(t);
-        temp.add(o);
+        temp.push(t);
+        temp.push(o);
         for(int i=stack.size()-1;i>=0;i--)
         {
             str[i]=copied.pop();
         }
         for(int i=0;i< str.length;i++)
         {
-            temp.add(str[i]);
+            temp.push(str[i]);
         }
         return temp;
     }
